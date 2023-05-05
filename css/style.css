@@ -20,6 +20,7 @@ Letra: #F5F5DC
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,300&display=swap');
 
 
 /*-------header--------*/
@@ -108,10 +109,10 @@ main{
     transition: 0.5s;
 }
 
-/*-------Main Vinos--------*/
+/*-------Main Vinos y cervezas--------*/
 
 
-.main-vinos{
+.main-productos{
     background-color: #131313;
     color: beige;
     padding-bottom: 50px;
@@ -119,7 +120,7 @@ main{
 
 }
 
-.main-vinos .row{
+.main-productos .row{
     margin-right:0;
     margin-left: 0;
     
@@ -130,28 +131,64 @@ main{
 
 }
 
-
-/*-------Main Cervezas--------*/
-.main-construccion{
-    background-color: white;
-    color: #131313;
+h4{
+    padding-top: 50px;
 }
 
-.sitio-construccion{
+/*-------Main Conocenos--------*/
+
+.main-conocenos{
+    background-color: white;
+    color: #131313;
+    text-align: center;
+    padding-top: 50px;
+  
+}
+
+.main-conocenos div.row-cols-1{
+    align-items: stretch;
+}
+.card-title{
+    font-weight: bold;
+}
+.card-text{
+    font-family: 'Source Serif Pro', serif !important;
+    font-style: italic;
+    font-size: 20px;
+}
+    
+
+
+/*-------Main Contacto--------*/
+
+.main-contacto {
+    background-color: white;
+    color: #131313;
+    text-align: center;
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    flex-direction: column;
-    padding-top: 100px;
-    
+    align-content: stretch;
+   
 }
 
-.sitio-construccion h1{
-    font-family: "Inter", sans-serif;
-    font-style: bold;
+
+.main-contacto p{ text-align: center;
+    font-family: 'Source Serif Pro', serif !important;
+    font-style: italic;
+    font-size: 20px;
 }
 
+
+#exampleFormControlTextarea1{
+   margin-bottom: 20px;
+
+}
+
+.imagen{
+padding-right: 50px;
+}
 
 
 /*-------Footer--------*/
@@ -190,6 +227,30 @@ div.row {display: flex;
     transition: 2s;
 }
 
+.btn-wsp{
+
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius:60px;
+    box-shadow: 0px 1px 10px rgba (0,0,0,0.3);
+    z-index: 100;
+   
+    
+}
+
+.btn-wsp:hover{
+    text-decoration: none;
+    transform: scale(1.2);
+    transition: 2s;
+   
+   
+}
 /*-------Medias Querys-------*/
 @media (max-width: 500px){
     .row{
